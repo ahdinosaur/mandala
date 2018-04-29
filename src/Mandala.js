@@ -12,8 +12,14 @@ const accentLineFn = function (theta, time) {
 
 const bigTriangle = [
   { x: 0, y: 0 },
-  { x: 1, y: 1 },
-  { x: 0, y: 1 }
+  { x: 1, y: 2 },
+  { x: 0, y: 2 }
+]
+
+const sliceTriangle = [
+  { x: 0, y: 0 },
+  { x: 0.25, y: 2 },
+  { x: 0, y: 2 }
 ]
 
 class Mandala extends Component {
@@ -29,28 +35,28 @@ class Mandala extends Component {
           n={7}
           shape={bigTriangle}
           time={time}
-          color='#7ABA7A'
-          offset={360/14}
+          color='#49375C'
+          direction={-1}
         />
         <PolarTriangles
           n={7}
-          shape={bigTriangle}
+          shape={sliceTriangle}
           time={time}
-          color='#49375C'
-          direction={-1}
+          color='#028482'
+          offset={360/14}
         />
         <PolarLine
           fn={accentLineFn}
           time={time}
-          color='#B76EB8'
-          strokeWidth={0.001}
+          strokeWidth={0.005}
+          color='#7ABA7A'
           direction={-1}
         />
         <PolarLine
           fn={mainLineFn}
           time={time}
-          color='#028482'
-          strokeWidth={0.0025}
+          color='#B76EB8'
+          strokeWidth={0.001}
         />
       </svg>
     )
