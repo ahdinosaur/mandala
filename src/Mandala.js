@@ -31,7 +31,7 @@ function PolarLine (props) {
   return (
     <polyline
       stroke={'teal'}
-      strokeWidth={0.005}
+      strokeWidth={0.0025}
       fill={'transparent'}
       points={pointsString}
     />
