@@ -2,6 +2,8 @@
 
 playing around with mandalas using `React` `<svg>`
 
+[**DEMO**](https://ahdinosaur.github.io/mandala/)
+
 ## Table of Contents
 
 - [Folder Structure](#folder-structure)
